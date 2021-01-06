@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* header  */
+
+header {
+    padding: 2rem 3rem;
+}
+
+header div {
+    font-size: large;
+}
+
+
+/* main  */
+
+main {
+    margin: 2rem 10% 3rem;
+    max-width: 80%;
+    display: flex;
+}
+
+main section {
+    padding: 1rem;
+}
+
+.hero-img {
+    width: 700px;
+}
+
+.heading {
+    font-size: 5rem;
+    line-height: 1.3;
+}
+
+.secondary-txt {
+    font-size: 1.2rem;
+}
+
+.primary-btn {
+    outline: none;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+}
+
+.primary-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+}
+
+
+/* footer */
+
+footer p {
+    text-align: center;
+}
