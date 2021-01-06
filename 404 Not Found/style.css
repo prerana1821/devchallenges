@@ -63,6 +63,10 @@ main section {
 
 /* footer */
 
+footer {
+    margin-bottom: 2rem;
+}
+
 footer p {
     text-align: center;
 }
