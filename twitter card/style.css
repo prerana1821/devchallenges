@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f6f6f6;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  background: #ffffff;
+  box-shadow: 18px 18px 36px #e0e0e0, -18px -18px 36px #fff;
+  border: 1px solid #0fb0e3;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.header-inner-div {
+  flex: 2;
+  margin: 0 1rem;
+}
+
+.btn {
+  background-color: #0fb0e3;
+  border: none;
+  color: #fff;
+  padding: 0.5em 1.2em;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.profile-img {
+  width: 5rem;
+  border-radius: 50%;
+  border: 2px solid #0fb0e3;
+}
+
+.text {
+  font-size: 1.5rem;
+  line-height: 4rem;
+}
+
+.likes {
+  font-size: 1.4rem;
+  color: #f44538;
+}
+
+.footer {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.heart {
+  width: 36px;
+}
+
+small {
+  font-size: large;
+}
