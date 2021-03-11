@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-color: #3eb0ef;
+  --grey-txt: #858585;
+  --black-color: #0a0b0c;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+hr {
+  background-color: #d3d3d3;
+}
+
+.blue-txt {
+  color: var(--blue-color);
+  text-transform: uppercase;
+}
+
+/* header */
+
+.header {
+  background-color: var(--black-color);
+  color: #fff;
+  min-width: 70%;
+  padding: 0 15%;
+  background: url("https://demo.ghost.io/content/images/size/w2000/2019/10/publication-cover.png");
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.left-nav > li,
+.right-nav > li {
+  display: inline;
+  padding: 0 0.3rem;
+}
+
+.left-nav > li > a {
+  color: #fff;
+  font-weight: 600;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-size: 0.8rem;
+}
+
+.right-nav > li > a > i {
+  color: #fff;
+  opacity: 0.8;
+}
+.right-nav button {
+  background: none;
+  color: #fff;
+  opacity: 0.8;
+  border: 2px solid #858585;
+  padding: 0.5em 0.8em;
+  border-radius: 1rem;
+}
+
+.heading {
+  padding: 6rem;
+  text-align: center;
+}
+
+.heading img {
+  max-width: 200px;
+  width: 100%;
+}
+
+.heading h2 {
+  color: #fff;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+/* welcome section */
+
+main {
+  max-width: 70%;
+  margin: 2rem 15%;
+}
+
+.welcome {
+  display: flex;
+  margin: 3rem 0;
+}
+
+.welcome img {
+  max-width: 700px;
+  width: 100%;
+}
+
+.welcome .info {
+  margin: 2rem;
+}
+
+.welcome h1 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.welcome p {
+  color: var(--grey-txt);
+  font-size: 1.3rem;
+}
+
+.details {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.details > img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.details-info {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  justify-content: space-evenly;
+  font-size: medium;
+}
+
+/* blogs  */
+
+.blogs {
+  display: flex;
+  margin: 3rem 0;
+  gap: 2rem;
+}
+
+.blog-img {
+  max-width: 400px;
+  max-height: 226px;
+  height: 100%;
+  width: 100%;
+}
+
+.blogs .info,
+.projects .info {
+  margin: 1rem 0;
+}
+
+.blogs h2,
+.projects h2 {
+  margin: 0.7rem 0;
+  font-size: 1.6rem;
+}
+
+.blogs p,
+.projects p {
+  font-size: large;
+  color: var(--grey-txt);
+}
+
+/* projects */
+
+.projects {
+  display: flex;
+  margin: 3rem 0;
+}
+
+.project-img {
+  max-width: 600px;
+  max-height: 280px;
+  height: 100%;
+  width: 100%;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--black-color);
+  color: var(--grey-txt);
+  display: flex;
+  min-width: 70%;
+  padding: 2rem 15%;
+  justify-content: space-between;
+}
+
+.footer h4,
+ul {
+  margin: 0.5rem 0;
+}
+
+.footer ul li {
+  display: inline;
+  padding: 0 0.4rem;
+}
+
+@media screen and (max-width: 800px) {
+  /* header */
+  .header {
+    padding: 0 8%;
+  }
+
+  .right-nav {
+    display: none;
+  }
+
+  .heading {
+    padding: 4rem 1rem;
+  }
+
+  .heading h2 {
+    font-size: 1.16rem;
+  }
+
+  /* main section  */
+
+  main {
+    max-width: 90%;
+    margin: 2rem 5%;
+  }
+
+  .welcome {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .welcome .info {
+    margin: 1rem 0;
+  }
+
+  /* blogs  */
+  .blogs,
+  .projects {
+    flex-direction: column;
+    margin: 3rem 0 1rem;
+  }
+
+  /* footer  */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 10%;
+  }
+}
