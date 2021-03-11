@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* header  */
+.header {
+  color: #fff;
+  background-color: #00bcd4;
+  display: flex;
+  min-width: 90%;
+  padding: 1rem 5%;
+  justify-content: space-between;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar ul {
+  margin: 1rem;
+}
+
+.navbar ul li {
+  display: inline;
+  padding: 1rem;
+}
+
+/* banner */
+
+.banner {
+  display: flex;
+  max-width: 80%;
+  margin: 8rem 10%;
+}
+.left-txt {
+  flex: 1;
+  margin: 0 3rem;
+}
+.left-txt h2 {
+  color: #ff4d8c;
+}
+
+.left-txt h1 {
+  color: #302e5a;
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+.left-txt p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.banner img {
+  flex: 1;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 3rem;
+}
+
+main {
+  max-width: 80%;
+  margin: 2rem 10%;
+}
+
+/* cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: 6rem 0;
+}
+.cards > div {
+  padding: 3rem 1rem 3rem 2rem;
+  background-color: #efefef;
+}
+
+.inner {
+  padding-right: 3rem;
+  border-right: #00bcd4 solid 2px;
+}
+
+.first-card {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.blue-card {
+  background-color: #00bcd4 !important;
+  border-radius: 0 1rem 1rem 0;
+  padding-right: 3rem !important;
+}
+
+.heading-text {
+  color: #302e5a;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.primary-text {
+  color: #ff4d8c;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.secondary-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-top: 2rem;
+}
+
+/* about  */
+
+.about {
+  display: flex;
+  gap: 3rem;
+  margin: 4rem 0;
+  line-height: 1.3;
+}
+
+.about .secondary-text {
+  padding: 0 0 2rem 0;
+}
+
+.about-card {
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.btn-register {
+  background-color: #ff4d8c;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+/* benefit */
+.benefit {
+  margin: 3rem 0;
+}
+
+.benefit > div {
+  display: flex;
+  margin: 3rem 0;
+  gap: 2rem;
+}
+
+.benefit-card {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up {
+  display: flex;
+  gap: 2rem;
+  background-color: #350d5c;
+  min-width: 80%;
+  align-items: center;
+  padding: 2rem 10%;
+  text-align: center;
+  justify-content: space-between;
+  line-height: 1.4;
+}
+
+.sign-up img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.sign-up .heading-text {
+  color: #00bcd4;
+}
+
+.sign-up .primary-text {
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  max-width: 80%;
+  justify-content: space-between;
+  margin: 3rem 10%;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.footer > p {
+  font-size: 1.2rem;
+}
+
+.footer ul li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    flex-direction: column;
+  }
+  .header .logo {
+    justify-content: center;
+  }
+  .navbar ul li {
+    padding: 0;
+  }
+  .banner {
+    flex-direction: column;
+    margin: 2rem 10%;
+  }
+  .banner img {
+    margin: 0;
+  }
+  .left-txt {
+    flex: 1;
+    margin: 0;
+  }
+  .left-txt h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 4.7rem;
+    margin: 1rem 0;
+  }
+  .left-txt p {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+  .cards > div {
+    border-radius: 1rem;
+    margin: 1rem 0;
+  }
+
+  .inner {
+    border-right: none;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .benefit > div {
+    flex-direction: column;
+  }
+  .sign-up {
+    line-height: 1.2;
+    flex-direction: column;
+  }
+  .sign-up .heading-text {
+    font-size: 3.2rem;
+  }
+  .sign-up .primary-text {
+    font-size: 1.2rem;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer > p {
+    font-size: 15px;
+    padding: 1rem 0;
+  }
+}
